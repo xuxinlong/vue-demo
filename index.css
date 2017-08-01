@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    color: #333;
+}
+body {
+	margin: 0px;
+}
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+.header {
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+	background-color: #4B84F9;
+	color: #FFF;
+	font-weight: 400;
+	text-align: center;
+}
+.header span {
+	color: #FFF;
+}
+#container {
+	position: absolute;
+	top: 60px;
+	bottom: 0px;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+}
+.depts {
+	position: absolute;
+	display: inline-block;
+	width: 300px;
+	height: 100%;
+	overflow-y: scroll;
+	background-color: #eaeaea;
+}
+ul,
+ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.depts ul li,
+.depts label {
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+    display: block;
+    cursor: pointer;
+    background-color: #eaeaea;
+}
+.depts ul li.select,
+.depts label.select,
+.depts ul li:hover,
+.depts label:hover {
+    background-color: #e4e4e4;
+}
+.depts ul {
+	padding-left: 20px;
+}
+.depts ul.expanded {
+	display: block;
+}
+.depts ul.collapsed {
+	display: none;
+}
+.content {
+	position: relative;
+    height: 100%;
+	margin-left: 300px;
+	display: block;	
+}
+.staffs {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	bottom: 67px;
+	overflow-y: scroll;
+}
+.staffs ul {
+	font-size: 0px;
+	border-bottom: 1px solid #d9dadc;
+}
+.staffs ul.title {
+	border-top: 1px solid #d9dadc;
+}
+.staffs ul li {
+	width: 20%;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	display: inline-block;        
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;        
+    padding-left: 20px;
+}
+.page {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 0px;
+	text-align: center;
+}
+.page > div {
+	display: inline-block;
+	position: relative;
+}
+.page > div > ul {
+	border-radius: 3px;
+	font-size: 0px;
+	position: absolute;
+	width: 80px;
+	background-color: #FFF;
+	border: 1px solid #d9dadc;
+	max-height: 200px;
+	bottom: 100%;
+	left: 5px;
+	padding: 10px 0px;
+	overflow-y: scroll;
+}
+.page > div.page-size > ul {
+	left: 53px;
+}
+.page > div > ul li {
+	font-size: 12px;
+	cursor: pointer;
+	height: 22px;
+	line-height: 22px;
+}
+.page > div > ul li:hover {
+	background-color: #4590e4;
+	color: #FFF;
+}
+.page span {
+	font-size: 12px;
+}
+.page a {
+    text-decoration: none;
+	width: 80px;
+	font-size: 12px;
+    display: inline-block;
+	height: 26px;
+	line-height: 26px;
+    border: 1px solid #d9dadc;
+    border-radius: 3px;
+    text-align: center;
+}
+.page a, 
+.page > div {
+    margin: 0px 5px;
+}
+.page a:hover {
+	background-color: #4590e4;
+	color: #FFF;	
+}
